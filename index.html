@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO META -->
+    <meta name="description" content="Interactive educational website on the Endocrine System, explaining hormones, glands, and physiological regulation.">
+    <meta name="keywords" content="endocrine system, hormones, biology, hypothalamus, pituitary, homeostasis, physiology">
+    <meta name="author" content="Prince Yadav">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OpenGraph / Social Sharing -->
+    <meta property="og:title" content="Endocrine System | Prince Yadav">
+    <meta property="og:description" content="Explore how hormones and glands regulate the human body through an interactive learning experience.">
+    <meta property="og:type" content="website">
+
+    <title>Endocrine System | Prince Yadav</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div id="progress-bar"></div>
+<canvas id="particle-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></canvas>
+
+<div class="bg-blobs">
+    <div class="blob"></div>
+    <div class="blob"></div>
+</div>
+
+<main id="viewport" role="main">
+
+    <section class="section-slide">
+        <div class="section-container center-text" data-tilt>
+            <h1 class="home__title animate">Endocrine System</h1>
+            <div class="title-separator animate"></div>
+            <p class="section__text animate">Advanced Chemical Coordination & Physiological Control</p>
+            <button class="next-btn animate" aria-label="Begin learning about the endocrine system">Begin Journey</button>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container split-responsive" data-tilt>
+            <div class="section__data animate">
+                <h2 class="section__title">What Are Hormones?</h2>
+                <div class="title-separator"></div>
+                <p class="section__text">
+                    Hormones are <b>biochemical signaling molecules</b> secreted by <b>ductless glands</b> directly into the bloodstream. 
+                    They serve as the body's "chemical messengers," carrying specific instructions to distant organs.
+                </p>
+                <ul class="section__list">
+                    <li><b>Trace Quantities:</b> Required in minute amounts to trigger massive changes.</li>
+                    <li><b>Target Specificity:</b> Only act on cells with compatible <b>receptors</b>.</li>
+                    <li><b>Persistence:</b> Their effects are slower to start but <b>longer-lasting</b> than nerve impulses.</li>
+                </ul>
+                <button class="next-btn" aria-label="Explore hormone functions">Explore Functions</button>
+            </div>
+            <div class="section__visual animate">
+                <img src="assets/img/hormones.jpg" alt="Molecular structure representing hormone signaling molecules" class="media-element">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container split-responsive" data-tilt>
+            <div class="section__data animate">
+                <h2 class="section__title">Hormones & Properties</h2>
+                <div class="title-separator"></div>
+                <p class="section__text">Hormones are non-nutrient, chemical messengers produced in trace amounts. Their key properties include:</p>
+                <ul class="section__list">
+                    <li><b>Ductless Secretion:</b> Poured directly into the bloodstream.</li>
+                    <li><b>Specificity:</b> Act only on specific "Target Cells" with receptors.</li>
+                    <li><b>Potency:</b> Required in very small (microgram) quantities.</li>
+                    <li><b>Non-Antigenic:</b> They do not trigger immune responses.</li>
+                </ul>
+                <button class="next-btn" aria-label="Proceed to chemical nature of hormones">Next</button>
+            </div>
+            <div class="section__visual animate">
+                <img src="assets/img/hormones.jpg" alt="Illustration showing hormone molecules interacting with target cells" class="media-element">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container" data-tilt>
+            <div class="section__data animate">
+                <h2 class="section__title">Chemical Nature of Hormones</h2>
+                <p class="section__text">Hormones are chemically diverse, which determines how they interact with cells:</p>
+                <div class="comparison-grid">
+                    <div class="system-box">
+                        <h3>Peptide & Protein</h3>
+                        <p>Water-soluble; bind to membrane receptors. Examples: <b>Insulin, Glucagon, Pituitary hormones</b>.</p>
+                    </div>
+                    <div class="system-box">
+                        <h3>Steroids</h3>
+                        <p>Lipid-soluble; derived from cholesterol. Cross membranes easily. Examples: <b>Cortisol, Testosterone</b>.</p>
+                    </div>
+                    <div class="system-box">
+                        <h3>Iodothyronines</h3>
+                        <p>Thyroid hormones (T3, T4) containing iodine, essential for basal metabolic rate.</p>
+                    </div>
+                </div>
+                <button class="next-btn" style="margin-top: 20px;" aria-label="Next section">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container split-responsive" data-tilt>
+            <div class="section__data animate">
+                <h2 class="section__title">How Hormones Work</h2>
+                <div class="title-separator"></div>
+                <p class="section__text">Hormones exert their effects through specific receptor binding:</p>
+                <ul class="section__list">
+                    <li><b>Membrane Receptors:</b> For peptides; generate "Second Messengers" (cAMP, IP3).</li>
+                    <li><b>Intracellular Receptors:</b> For steroids; the Hormone-Receptor complex enters the nucleus to change gene expression.</li>
+                </ul>
+                <button class="next-btn" aria-label="View hormone mechanism diagram">Next</button>
+            </div>
+            <div class="section__visual animate">
+                <img src="assets/img/Homeostasis.png" alt="Diagram explaining hormone regulation and homeostasis" class="media-element">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container split-responsive" data-tilt>
+            <div class="section__data animate">
+                <h2 class="section__title">Negative Feedback</h2>
+                <p class="section__text">Timing and amount of hormone release are regulated by feedback mechanisms.</p>
+                <ul class="section__list">
+                    <li>High blood sugar triggers <b>Insulin</b> release.</li>
+                    <li>Rising Insulin levels lower blood sugar.</li>
+                    <li>Reduced sugar levels then shut off further Insulin production.</li>
+                </ul>
+                <button class="next-btn" aria-label="Next topic">Next</button>
+            </div>
+            <div class="section__visual animate">
+                <img src="assets/img/controlaxis.png" alt="Feedback control axis between hypothalamus, pituitary, and glands" class="media-element">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slide">
+        <div class="section-container center-text">
+            <div class="section__data animate">
+                <h2 class="section__title">Summary & Conclusion</h2>
+                <div class="title-separator"></div>
+                <p class="section__text" style="max-width: 850px;">
+                    The Endocrine System is an intricate communication network that ensures <b>Homeostasis</b>. From the molecular "Lock and Key" mechanism to the grand control axis of the Hypothalamus, it governs growth, reproduction, and survival. 
+                </p>
+                <p style="margin-top: 30px; font-weight: 700; color: #64ffda; font-size: 1.5rem;">Thank You!</p>
+                <button onclick="location.reload()" class="next-btn" style="margin-top: 20px;" aria-label="Restart presentation">Restart</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="copyright">
+    <p>&copy; 2025 Prince Yadav</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
